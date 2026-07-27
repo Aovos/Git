@@ -7,6 +7,8 @@
 
 [Creating a Repository](#creating-a-repository)
 
+[Repository Status](#repository-status)
+
 
 ## Installation
 > Check if `Git` is already installed on your system.
@@ -144,3 +146,17 @@ ls -la
 > > The repository itself contains all Git metadata.
 
 
+## Repository Status
+
+> Displays the current state of your repository.
+> > Shows tracked files, untracked files, staged changes, and pending commits.
+```bash
+git status
+```
+> Example output:
+```text
+On branch main
+No commits yet
+nothing to commit (create/copy files and use "git add" to track)
+```
+> Run this command regularly to see what has changed in your repository.
