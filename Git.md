@@ -15,6 +15,8 @@
 
 [Viewing Commit History](#viewing-commit-history)
 
+[Ignoring Files](#ignoring-files)
+
 
 ## Installation
 > Check if `Git` is already installed on your system.
@@ -172,7 +174,7 @@ nothing to commit (create/copy files and use "git add" to track)
 
 > Before changes can be committed, they must be added to the staging area.
 > > The staging area acts like a queue for the next commit, allowing you to choose exactly which changes should be included.
-> > > There are two main methods to stage changes: staging specific files or staging all changes at once.
+> > There are two main methods to stage changes: staging specific files or staging all changes at once.
 
 ### Stage Specific Files
 
@@ -297,3 +299,61 @@ git show a1b2c3d
 ```
 
 
+## Ignoring Files
+
+> Sometimes you may have files or directories that should not be tracked by Git.
+> > Common examples include log files, temporary files, build artifacts, and files containing sensitive information.
+> > Git uses a `.gitignore` file to define which files and directories should be ignored.
+
+### Create a .gitignore File
+
+> Create a `.gitignore` file in the root directory of your repository:
+```bash
+touch .gitignore
+```
+
+### Ignore Specific Files
+
+> Ignore a specific file:
+```gitignore
+secret.txt
+```
+> Git will ignore any file named `secret.txt`.
+
+### Ignore File Types
+
+> Ignore all files of a specific type:
+```gitignore
+*.log
+*.tmp
+```
+> This example ignores all `.log` and `.tmp` files.
+
+### Ignore Directories
+
+> Ignore an entire directory:
+
+```gitignore
+node_modules/
+build/
+dist/
+```
+> All files and subdirectories inside those directories will be ignored.
+
+### Verify Ignored Files
+
+> Check the repository status:
+```bash
+git status
+```
+> Ignored files will not appear in the output.
+
+### Already Tracked Files
+
+> Files that are already tracked by Git will not be ignored automatically.
+> > If a file is already tracked by Git, it must first be removed from the Git index.
+Remove a file from the Git index while keeping it on disk:
+```bash
+git rm --cached secret.txt
+```
+> After that, add the file to `.gitignore` and create a new commit.
