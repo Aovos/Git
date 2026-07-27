@@ -4,7 +4,7 @@
 
 ## Basics
 
-- [Git Installation](Git-Instalation.md)
+- [Git Installation](Git-Installation.md)
 - [Git Identity](Git-Identity.md)
 - [Creating a Repository](Creating-a-Repository.md)
 - [Repository Status](Repository-Status.md)
