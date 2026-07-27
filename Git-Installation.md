@@ -1,4 +1,4 @@
-# Git Installation
+# Git-Installation
 
 1. Check if Git is already installed on your system:
 
