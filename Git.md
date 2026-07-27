@@ -160,3 +160,36 @@ No commits yet
 nothing to commit (create/copy files and use "git add" to track)
 ```
 > Run this command regularly to see what has changed in your repository.
+
+
+## Staging Files
+
+> Before changes can be committed, they must be added to the staging area.
+> > The staging area acts like a queue for the next commit, allowing you to choose exactly which changes should be included.
+> > > There are two main methods to stage changes: staging specific files or staging all changes at once.
+
+### Stage Specific Files
+
+> Stage one specific file:
+```bash
+git add my-file.txt
+```
+
+> Multiple files can be staged at the same time:
+```bash
+git add file-1.txt file-2.txt file-3.txt
+```
+
+### Stage All Changes
+
+> Stage all modified and untracked files in the current directory and its subdirectories:
+```bash
+git add .
+```
+
+> Always check the current repository status:
+```bash
+git status
+```
+> Files listed under `Changes to be committed` are staged and ready to be committed.
+> Files listed under `Changes not staged for commit` are modified but not yet staged.
