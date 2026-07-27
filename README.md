@@ -26,12 +26,19 @@
 | | `git show COMMIT_HASH` | Display detailed information about a commit |
 
 
-
-
 ## Working with Changes
 
-- [Ignoring Files](Gitignore.md)
-- [Undoing Changes](Undoing-Changes.md)
+| Guide | Command | Description |
+|---------|---------|---------|
+| [Ignoring Files](Gitignore.md) | `touch .gitignore` | Create a `.gitignore` file |
+| | `git rm --cached secret.txt` | Stop tracking a file while keeping it on disk |
+| [Undoing Changes](Undoing-Changes.md) | `git restore my-file.txt` | Discard unstaged changes |
+| | `git restore --staged my-file.txt` | Unstage a specific file |
+| | `git restore --staged .` | Unstage all staged files |
+| | `git revert COMMIT_HASH` | Revert a previous commit |
+| | `git reset --hard COMMIT_HASH` | Reset a branch to a specific commit |
+| | `git checkout COMMIT_HASH` | View a previous commit |
+
 
 ## Collaboration
 
