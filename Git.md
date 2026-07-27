@@ -9,6 +9,10 @@
 
 [Repository Status](#repository-status)
 
+[Staging Files](#staging-files)
+
+[Committing Changes](#committing-changes)
+
 
 ## Installation
 > Check if `Git` is already installed on your system.
@@ -193,3 +197,56 @@ git status
 ```
 > Files listed under `Changes to be committed` are staged and ready to be committed.
 > Files listed under `Changes not staged for commit` are modified but not yet staged.
+
+
+## Committing Changes
+
+> A commit creates a snapshot of all currently staged changes.
+> > Each commit represents a specific state of your repository and is stored in the repository history.
+> > Create a commit with a message describing your changes:
+
+```bash
+git commit -m "Your commit message"
+```
+
+> Example:
+
+```bash
+git commit -m "Add repository status section"
+```
+
+### Commit Messages
+
+> A commit message should briefly describe the purpose of the changes.
+
+Good examples:
+
+```text
+Add repository status section
+Fix typo in Git documentation
+Update installation instructions
+```
+
+Bad examples:
+
+```text
+Update
+Changes
+Fix
+```
+
+### Verify the Commit
+
+> Display the commit history:
+
+```bash
+git log
+```
+
+> Display a compact version of the commit history:
+
+```bash
+git log --oneline
+```
+
+> Your newly created commit should appear in the output.
