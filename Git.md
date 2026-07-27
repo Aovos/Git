@@ -13,6 +13,8 @@
 
 [Committing Changes](#committing-changes)
 
+[Viewing Commit History](#viewing-commit-history)
+
 
 ## Installation
 > Check if `Git` is already installed on your system.
@@ -204,13 +206,11 @@ git status
 > A commit creates a snapshot of all currently staged changes.
 > > Each commit represents a specific state of your repository and is stored in the repository history.
 > > Create a commit with a message describing your changes:
-
 ```bash
 git commit -m "Your commit message"
 ```
 
 > Example:
-
 ```bash
 git commit -m "Add repository status section"
 ```
@@ -218,9 +218,7 @@ git commit -m "Add repository status section"
 ### Commit Messages
 
 > A commit message should briefly describe the purpose of the changes.
-
 Good examples:
-
 ```text
 Add repository status section
 Fix typo in Git documentation
@@ -228,7 +226,6 @@ Update installation instructions
 ```
 
 Bad examples:
-
 ```text
 Update
 Changes
@@ -238,15 +235,65 @@ Fix
 ### Verify the Commit
 
 > Display the commit history:
-
 ```bash
 git log
 ```
 
 > Display a compact version of the commit history:
-
 ```bash
 git log --oneline
 ```
-
 > Your newly created commit should appear in the output.
+
+
+## Viewing Commit History
+
+> Git stores every commit in the repository history.
+> > The commit history allows you to review previous changes and track the evolution of your repository.
+
+### Display the Full Commit History
+
+> Show all commits with detailed information:
+```bash
+git log
+```
+> The output includes:
+> > Commit hash
+> > Author
+> > Date
+> > Commit message
+
+### Display a Compact Commit History
+
+> Show each commit in a single line:
+```bash
+git log --oneline
+```
+> Example output:
+```text
+a1b2c3d Add committing changes section
+e4f5g6h Add staging files section
+i7j8k9l Add repository status section
+```
+
+### Limit the Number of Results
+
+> Show only the most recent commits:
+```bash
+git log -5
+```
+> Display only the last 5 commits.
+
+### Display Changes of a Commit
+
+> Show detailed information about a specific commit:
+
+```bash
+git show COMMIT_HASH
+```
+> Example:
+```bash
+git show a1b2c3d
+```
+
+
