@@ -1,73 +1,73 @@
 # Git Branches
 
-> Branches (Zweige) erlauben es dir, unabhängig vom Hauptcode an neuen Features oder Fehlerbehebungen zu arbeiten, ohne die stabile Version zu gefährden.
+> Branches allow you to work on new features or bug fixes independently from the main codebase (usually `main` or `master`), without risking the stability of production code.
 
-## Branches verwalten und anzeigen
+## Managing and Listing Branches
 
-> Listet alle vorhandenen Branches auf und zeigt dir, auf welchem Branch du dich aktuell befindest.
+> Lists all existing branches and indicates which branch you are currently working on.
 
-1. Lokale Branches anzeigen:
+1. List local branches:
 
 ```bash
 git branch
 ```
 
-2. Alle lokalen und entfernten (Remote) Branches anzeigen:
+2. List all local and remote branches:
 
 ```bash
 git branch -a
 ```
 
-> Der aktuelle Branch wird in der Ausgabe mit einem Sternchen (`*`) markiert.
+> The current branch will be marked with an asterisk (`*`) in the output.
 
-## Neuen Branch erstellen
+## Creating a New Branch
 
-> Erstellt eine exakte Kopie deines aktuellen Arbeitsstandes unter einem neuen Namen.
+> Creates an exact copy of your current working state under a new name.
 
-1. Einen neuen Branch erstellen:
+1. Create a new branch:
 
 ```bash
-git branch feature-neue-funktion
+git branch feature-new-function
 ```
 
-> Dieser Befehl erstellt den Branch nur. Du wechselst dadurch noch nicht automatisch dorthin.
+> This command only creates the branch. It does not automatically switch your workspace to it.
 
-## Branches wechseln
+## Switching Branches
 
-> Wechselt den Arbeitsbereich auf einen anderen bestehenden Branch.
+> Switches your workspace to another existing branch.
 
-1. Auf einen vorhandenen Branch wechseln:
+1. Switch to an existing branch:
 
 ```bash
-git checkout feature-neue-funktion
+git checkout feature-new-function
 ```
-*(Alternativ):*
+*(Alternative):*
 ```bash
-git switch feature-neue-funktion
-```
-
-2. Einen neuen Branch erstellen und sofort dorthin wechseln:
-
-```bash
-git checkout -b feature-neue-funktion
-```
-*(Alternativ):*
-```bash
-git switch -c feature-neue-funktion
+git switch feature-new-function
 ```
 
-## Branches löschen
-
-> Entfernt Branches, die nicht mehr benötigt werden (z. B. nach einem erfolgreichen Merge).
-
-1. Einen Branch sicher löschen:
+2. Create a new branch and switch to it immediately:
 
 ```bash
-git branch -d feature-neue-funktion
+git checkout -b feature-new-function
+```
+*(Alternative):*
+```bash
+git switch -c feature-new-function
 ```
 
-2. Das Löschen eines Branches erzwingen:
+## Deleting Branches
+
+> Removes branches that are no longer needed (e.g., after a successful merge).
+
+1. Safely delete a branch (fails if changes are not fully merged):
 
 ```bash
-git branch -D feature-neue-funktion
+git branch -d feature-new-function
+```
+
+2. Force delete a branch (will delete unmerged changes as well):
+
+```bash
+git branch -D feature-new-function
 ```
