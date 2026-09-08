@@ -1,7 +1,8 @@
 # Create a Repository
 
-> A Git repository is the storage location for your project's files, history, branches, and metadata.
-> > Git provides two repository types: standard repositories and bare repositories.
+> A Git repository stores your project's files, history, branches, and metadata.
+>
+> Git provides two repository types: standard repositories and bare repositories.
 
 ## Standard Repository
 
@@ -9,23 +10,29 @@
 
 1. Navigate to the directory where you want to create your repository:
 
-```bash
-cd your-path
-```
+    ```bash
+    cd ~/Projects/MyProject
+    ```
 
 2. Initialize a standard Git repository:
 
-```bash
-git init
-```
+    ```bash
+    git init
+    ```
 
-> Git will create a hidden `.git` directory inside your current working directory. This directory contains all repository metadata.
+    Example output:
+
+    ```text
+    Initialized empty Git repository in /path/to/project/.git/
+    ```
+
+> Git creates a hidden `.git` directory inside your current working directory. This directory contains all repository metadata.
 
 3. Verify that the repository was created:
 
-```bash
-ls -la
-```
+    ```bash
+    ls -la
+    ```
 
 > You should see a `.git` directory in the output.
 
