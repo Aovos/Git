@@ -11,7 +11,7 @@
 1. Navigate to the directory where you want to create your repository:
 
     ```bash
-    cd ~/Projects/MyProject
+    cd /path/to/directory
     ```
 
 2. Initialize a standard Git repository:
@@ -43,3 +43,5 @@ Example output:
 ..
 .git
 ```
+
+## [Bare Repositories](Create-a-Bare-Repository.md)
