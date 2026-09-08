@@ -44,4 +44,4 @@ Example output:
 .git
 ```
 
-## [Bare Repositories](Modules/Create-a-Bare-Repository.md)
+## [Bare Repositories](https://github.com/Aovos/Git/blob/main/Modules/Create%20a%20Bare%20Repository.md)
