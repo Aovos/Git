@@ -2,6 +2,8 @@
 
 > A beginner-friendly guide covering Git fundamentals, repository management, version control, and collaboration workflows.
 
+## Common Workflow
+- [Connect Local Repo to GitHub](Connect-Local-Repo-to-GitHub.md)
 
 ## Basics
 
@@ -83,8 +85,8 @@
 | | `git push -u origin main` | Push and set the upstream branch |
 | Pull-Requests.md | Platform-specific feature | Request code review before merging changes |
 
-
-## Common Workflow
+---
+## Common Workflow old
 
 ### Clone an Existing Repository
 
