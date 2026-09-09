@@ -48,7 +48,8 @@ Example output:
 
 ```text
 Changes to be committed:
-  new file: README.md
+  modified: README.md
+  new file: Staging.md
 ```
 
 ### Clean Working Tree
