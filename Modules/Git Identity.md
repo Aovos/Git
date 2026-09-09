@@ -1,6 +1,8 @@
 # Git Identity
 
 > Git Identity defines the author information that is attached to your commits. Each commit stores a username and e-mail address, allowing Git to identify who created the changes.
+>
+> > Git requires a configured identity before commits can be created!
 
 ## Global Identity Configuration
 
@@ -28,11 +30,13 @@ you@example.com
 ## Local Identity Configuration
 
 > Applies only to the current repository and overrides the global configuration. Useful when a specific repository requires a different identity than your global configuration.
+>
+> Local configuration takes precedence over global configuration for the current repository.
 
 1. Navigate to your repository:
 
 ```bash
-cd ~/Projects/my-project
+cd /path/to/repository
 ```
 
 2. Set your local username and e-mail address:
@@ -57,5 +61,3 @@ Example output:
 Your Name
 you@example.com
 ```
-
-> Local configuration always takes precedence over global configuration!
