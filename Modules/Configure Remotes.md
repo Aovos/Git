@@ -88,10 +88,18 @@ origin  https://github.com/USERNAME/FORK.git (push)
 
 ## Remove a Remote Repository
 
-1. Remove a configured remote:
-
 > Removing a remote only removes the local connection. It does not delete the remote repository.
+
+1. Remove a configured remote:
 
 ```bash
 git remote remove origin
 ```
+
+2. Verify that the remote was removed:
+
+```bash
+git remote -v
+```
+
+> No output should be displayed if no remotes are configured.
