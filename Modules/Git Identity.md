@@ -61,3 +61,37 @@ Example output:
 Your Name
 you@example.com
 ```
+
+## Update an Identity
+
+> Running the configuration command again with different values updates the existing identity.
+
+Update the Global Identity
+
+```bash
+git config --global user.name "New Name"
+git config --global user.email "new@example.com"
+```
+
+Update the Local Identity
+
+```bash
+git config user.name "New Name"
+git config user.email "new@example.com"
+```
+
+## Remove an Identity
+
+Remove the Global Identity
+
+```bash
+git config --global --unset user.name
+git config --global --unset user.email
+```
+
+Remove the Local Identity
+
+```bash
+git config --unset user.name
+git config --unset user.email
+```
