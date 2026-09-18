@@ -26,9 +26,15 @@
     Initialized empty Git repository in /path/to/project/.git/
     ```
 
+3. Rename the default branch to `main`:
+
+    ```bash
+    git branch -m main
+    ```
+
 > Git creates a hidden `.git` directory inside your current working directory. This directory contains all repository metadata.
 
-3. Verify that the repository was created:
+4. Verify that the repository was created:
 
     ```bash
     ls -la
@@ -44,4 +50,4 @@ Example output:
 .git
 ```
 
-## [Bare Repositories](https://github.com/Aovos/Git/blob/main/Modules/Create%20a%20Bare%20Repository.md)
+## ../Modules/Create%20a%20Bare%20Repository.md
