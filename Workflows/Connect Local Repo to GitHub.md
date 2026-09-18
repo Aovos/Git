@@ -7,6 +7,10 @@ Initialize a new Git repository:
 ```bash
 git init
 ```
+Rename the default branch to `main`:
+```bash
+git branch -m main
+```
 
 ### 2. [Git Identity](../Modules/Git%20Identity.md)
 
