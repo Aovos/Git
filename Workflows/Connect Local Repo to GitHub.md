@@ -16,7 +16,7 @@ Push the local branch and configure the upstream branch:
 git push -u origin main
 ```
 
-### 3. [Authenticate with GitHub using HTTPS](../Modules/Authenticate%20with%20GitHub%20using%20HTTPS%20(Terminal.md))
+### 3. [Authenticate with GitHub using HTTPS Terminal](../Modules/Authenticate%20with%20GitHub%20using%20HTTPS%20Terminal.md)
 
 If GitHub requests authentication during the push operation, authenticate using your GitHub username and Personal Access Token (PAT).
 
